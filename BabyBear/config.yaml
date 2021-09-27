@@ -1,0 +1,19 @@
+bot_prefix: ","
+token: "ODQwNzkxMDQyMTMwNDQ0MzIw.YJdVrQ.EaeZbuoqOY4eQsU6fbTdqQdNoNg"
+application_id: "840791042130444320"
+
+mods:
+  - 483535463148158976
+owners:
+  - 205865007395766272
+  - 307234299164360704
+  - 342285199347941386
+  - 456976204226887690
+blacklist:
+  - 123456789
+
+main_color: 0xD75BF4
+error: 0xF00505
+success: 0x42F56C
+warning: 0xF59E42
+info: 0x4299F5
