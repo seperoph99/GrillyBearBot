@@ -25,7 +25,7 @@ import json
 from datetime import datetime
 from dislash import InteractionClient, ActionRow, Button, ButtonStyle,SelectMenu, SelectOption
 
-#test Comment for gits
+#test Comment for gitsdsdfgsdfgsdfg
 @commands.command()
 async def on_ready():
     print("Everything's all ready to go~")
