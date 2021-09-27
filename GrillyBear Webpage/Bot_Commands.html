@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+  <head>
+  <!--Page stylesheet,title and setting the sourcecode for displaying the source code for all files. -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>This is the Tools page</title>
+	<script src="js/SourceCodeDisplay.js"></script>
+  </head>
+  <body>
+	<style>
+body {
+  background-image: url('Background.gif');
+}
+</style>
+
+<!--Setting the nav bar-->
+
+			<div class="header">
+		<div class="topnav">
+		<a href="index.html">Home</a>
+		<!-- <a href="about.html">About</a> -->
+		<a class="active" href="Bot_Commands.html">Bot Commands</a>
+		<!-- <a href="download.html">Downloads</a>
+		<a href="contact_us.html">Contact Us</a>
+		<a href="Javascript.html">Extra Javascript</a> -->
+				<div class = "Login"><a href = "login.php">Login</a>
+		<div class = "Register"><a href = "register.php">Sign Up</a>
+</div>
+	</div>
+	</div>
+	
+<!--Setting all the buttons to display source code.-->
+  </body>
+<p><h3>Double Click any of the buttons you wish to see the commands for.</h3></p>
+<p><h1>General</h1></p>
+<button class="btn" onclick="information()">information</button>
+<button class="btn" onclick="randomnumbergenerator()">Random Number Generator</button>
+<button class="btn" onclick="reddit()">reddit</button>
+<button class="btn" onclick="sickness()">sickness</button>
+<button class="btn" onclick="deals()">game deals</button>
+<button class="btn" onclick="gameservers()">gameservers</button>
+<button class="btn" onclick="gayr8()">gayr8</button>
+<button class="btn" onclick="feedback()">feedback</button>
+<button class="btn" onclick="gamestats()">gamestats</button>
+
+
+
+<!--all web pages source code code-->
+<div id="information" hidden >
+<body>
+  Command: /information
+  <br>
+  <br>
+  Command_Options:None
+  <br>
+  <br>
+  Command_Description:Will display information about the bot and the programmers who made it.
+</body>
+</div>
+<div id="randomnumbergenerator" hidden>
+  <body>
+    Command: /randomnumbergenerator
+    <br><br>
+    Command_Options:<br>&nbsp;&nbsp;&nbsp; minnumber: Sets the lowest number that can be generator,<br>&nbsp;&nbsp;&nbsp;&nbsp;maxnumber: Sets the highest number that can be generated.
+    <br><br>
+    Command_Description: A random number generator that will pick a number between a chosen min and max number provided.
+  </body>
+
+</div>
+<div id="reddit" hidden>
+<body>
+  Command: /reddit
+  <br><br>
+  Command_Options:<br>&nbsp;&nbsp;&nbsp; subreddit: The subreddits name you want to pull from.
+  <br><br>
+  Command_Description: Will pull randomly from the top 25 posts of the subreddit of your choosing and post that image.
+
+</body>
+</div>
+<div id="sickness" hidden>
+<body>
+  Command: /sickness
+  <br><br>
+  Command_Options: None
+  <br><br>
+  Command_Description: Generates a random sickness for yourself
+</body>
+</div>
+<div id="deals" hidden>
+<body>
+  Command: /deals
+  <br><br>
+  Command_Options:<br>&nbsp;&nbsp;&nbsp; game: The name of the game you want to look up prices for.
+  <br><br>
+  Command_Description: Will take the game that you provide and look up all prices for it and display them to you in an orderly fashion.
+</body>
+</div>
+<div id="gameservers" hidden>
+<body>
+  Command: /gameservers
+  <br><br>
+  Command_Options: None
+  <br><br>
+  Command_Description: Will display all avaliable "The Grilliest Bears" Game servers if any.
+</body>
+</div>
+<div id="feedback" hidden>
+<body>
+  Command: /feedback
+  <br><br>
+  Command_Options:<br>&nbsp;&nbsp;&nbsp; feedbacktitle: the title you wish to set for the feedback,<br>&nbsp;&nbsp;&nbsp;&nbsp;feedback: The actual feedback that you wish to pass along.
+  <br><br>
+  Command_Description: Will take the feedback you provide and send it to the developer.
+</body>
+</div>
+<div id="gayr8" hidden>
+<body>
+  Command: /gayr8
+  <br><br>
+  Command_Options:<br>&nbsp;&nbsp;&nbsp; target: The user you wish to target with the command. 
+  <br><br>
+  Command_Description: Will take the target provided and give them a random gay rating.(Is just for fun don't take it too seriously.)
+</body>
+</div>
+<div id="gamestats" hidden>
+<body>
+  Command: /gamestats
+  <br><br>
+  Command_Options:<br>&nbsp;&nbsp;&nbsp; game: the name of the game you want to search for.
+  <br><br>
+  Command_Description: Will provide some statistics like current player count for the game of your choice as long as it is on steam.
+</body>
+</div>
+
+<p><h1>Audio</h1></p>
+<button class="btn" onclick="play()">play</button>
+<button class="btn" onclick="playlistplay()">play playlist</button>
+<button class="btn" onclick="pause()">pause</button>
+<button class="btn" onclick="resume()">resume</button>
+<button class="btn" onclick="endplay()">endplay</button>
+<button class="btn" onclick="createplaylist()">createplaylist</button>
+<button class="btn" onclick="addtoplaylist()">addtoplaylist</button>
+<button class="btn" onclick="removefromplaylist()">removefromplaylist</button>
+<button class="btn" onclick="showplaylist()">showplaylist</button>
+
+<div id="play" hidden >
+  <body>
+    Command: /play
+    <br><br>
+    Command_Options:<br>&nbsp;&nbsp;&nbsp; searchterms: the url of the song or the terms to search youtube for. ,<br>&nbsp;&nbsp;&nbsp;&nbsp;loop: Sets how many times you want the song to loop.
+    <br><br>
+    Command_Description: Will play a youtube video's audio with your link or search terms provided.
+  </body>
+</div>
+
+<div id="playlistplay" hidden >
+  <body>
+    Command: /playlistplay
+    <br><br>
+    Command_Options:<br>&nbsp;&nbsp;&nbsp; searchterms: the url of the song or the terms to search youtube for. ,<br>&nbsp;&nbsp;&nbsp;&nbsp;loop: Sets how many times you want the song to loop.
+    <br><br>
+    Command_Description: Will play a youtube video's audio with your link or search terms provided.
+  </body>
+</div>
+
+<div id="pause" hidden >
+  <body>
+    Command: /pause
+    <br><br>
+    Command_Options: None
+    <br><br>
+    Command_Description: Pauses the currently playing audio.
+  </body>
+</div>
+
+<div id="resume" hidden >
+  <body>
+    Command: /resume
+    <br><br>
+    Command_Options: None
+    <br><br>
+    Command_Description: Resumes the currently playing audio.
+  </body>
+</div>
+
+<div id="endplay" hidden >
+  <body>
+    Command: /endplay
+    <br><br>
+    Command_Options: None
+    <br><br>
+    Command_Description: Ends the currently playing audio you will need to re-search for a song to start again.
+  </body>
+</div>
+
+<div id="createplaylist" hidden >
+  <body>
+    Command: /createplaylist
+    <br><br>
+    Command_Options: <br>&nbsp;&nbsp;&nbsp; playlist_name: The name you want your playlist to be called.
+    <br><br>
+    Command_Description: Creates a blank playlist for you to add songs to.
+    .
+  </body>
+</div>
+
+<div id="addtoplaylist" hidden >
+  <body>
+    Command: /addtoplaylist
+    <br><br>
+    Command_Options: <br>&nbsp;&nbsp;&nbsp; playlist_name: The name of the playlist you are adding a song to.<br>&nbsp;&nbsp;&nbsp;&nbsp;url: The songs url that will be added to the playlist.
+    <br><br>
+    Command_Description: Adds a song to the playlist of your choosing.
+  </body>
+</div>
+
+<div id="removefromplaylist" hidden >
+  <body>
+    Command: /removefromplaylist
+    <br><br>
+    Command_Options: <br>&nbsp;&nbsp;&nbsp; playlist_name: The name of the playlist you are removing a song from.<br>&nbsp;&nbsp;&nbsp;&nbsp;songurl: The song's url that will be removed from the playlist.
+    <br><br>
+    Command_Description: Removes a song from the playlist of your choosing.
+  </body>
+</div>
+
+<div id="showplaylist" hidden >
+  <body>
+    Command: /showplaylist
+    <br><br>
+    Command_Options: <br>&nbsp;&nbsp;&nbsp; playlist_name: The name of the playlist you want to see the contents of.
+    <br><br>
+    Command_Description: Shows the contents of a playlist.
+  </body>
+</div>
+<!--Setting buttons for the source code for javascript-->
+
+<!-- <p><h1>Javascript</h1></p>
+<button class="btn" onclick="SourceAlert()">Alert</button>
+<button class="btn" onclick="SourcePrompt()">Prompt</button>
+<button class="btn" onclick="SourceTrueFalseReturn()">TrueFalseReturn</button>
+<button class="btn" onclick="SourceDateTime()">DateTime</button>
+<button class="btn" onclick="SourceMouseOver()">MouseOver</button>
+<button class="btn" onclick="SourceTextColor()">TextColor</button>
+<button class="btn" onclick="SourceTryCatch()">TryCatch</button>
+<button class="btn" onclick="SourceDarkMode()">DarkMode</button>
+<button class="btn" onclick="SourceHideText()">HideText</button>
+<button class="btn" onclick="SourceHideButton()">HideButton</button>
+<button class="btn" onclick="SourceAnonymous()">Anonymous Function</button>
+<button class="btn" onclick="SourceTruthyFalsy()">TruthyFalsy</button>
+
+<!--The source code for all of the javascript files-->
+
+<div id="SourceAlert" hidden >
+<xmp>															Alert
+
+function AlertIneraction() {
+  alert("I am an alert Woopie!");
+}</xmp>
+</div>
+<div id="SourcePrompt" hidden>
+<xmp>															Prompt
+
+function PromptInteraction(){
+	let age = prompt('How old are you?', 194); 
+	alert(`Your age is ${age} years old congratulations!`); 
+}</xmp>
+</div>
+<div id="SourceTrueFalseReturn" hidden>
+<xmp>															TrueFalseReturn
+
+function HappyInteraction(){
+	let isHappy  = confirm('Are you Happy?'); 
+	alert(` ${isHappy}`);
+}	</xmp>
+</div>
+<div id="SourceDateTime" hidden>
+<xmp>															DateTime
+
+function DateTime() { 
+var my_time = new Date();
+document.getElementById('display').innerHTML=my_time
+}</xmp>
+</div>
+<div id="SourceMouseOver" hidden>
+<xmp>															MouseOver
+
+function over() {
+document.getElementById("MouseOverText").innerHTML = "You did it.... How rude of you.";
+}
+</xmp>
+</div>
+<div id="SourceTextColor" hidden>
+<xmp>															TextColor
+
+function myFunction(elmnt, clr) {
+  elmnt.style.color = clr;
+}</xmp>
+</div>
+<div id="SourceTryCatch" hidden>
+<xmp>															TryCatch
+
+function TryCatchExample()
+{
+    try 
+    {
+        TrYcAtCh();
+    }
+    catch(error)
+    {
+        document.getElementById('Err').innerHTML =   error.message;
+    }
+}</xmp>
+</div>
+<div id="SourceDarkMode" hidden>
+<xmp>															DarkMode
+
+	// Toggle Mode
+    $( ".inner-switch" ).on("click", function() {
+        if( $( ".header" ).hasClass( "dark" )) {
+          $( ".header" ).removeClass( "dark" );
+          $( ".inner-switch" ).text( "OFF" );
+        } else {
+          $( ".header" ).addClass( "dark" );
+          $( ".inner-switch" ).text( "ON" );
+        }
+    });</xmp>
+</div>
+<div id="SourceHideText" hidden>
+<xmp>															HideText
+
+$(document).ready(function(){
+  $(":reset").click(function(){
+    $("#Paragraph").hide();
+  });
+});</xmp>
+</div>
+<div id="SourceHideButton" hidden>
+<xmp>															HideButton
+
+$(document).ready(function(){
+  $("#UglyButton").hover(function(){
+    $("#UglyButton").fadeOut(2000);
+  });
+});</xmp>
+</div>
+
+<div id="SourceAnonymous" hidden>
+<xmp>															Anonymous Function
+
+(function () {
+  document.getElementById('anon').innerHTML = 'Self Called Anonymous Function i am!';
+})();</xmp>
+</div>
+
+<div id="SourceTruthyFalsy" hidden>
+<xmp>															TruthFalsy
+
+function TruthyFalsy(){
+	Check = prompt('Enter anything to check truthy or falsy');
+	var CheckB = Boolean(`${Check}`)
+	alert(`${CheckB}`); 
+}</xmp>
+</div>
+
+<!-- <p><h1>Program</h1></p>
+Button for the source of the program itself
+<button class="btn" onclick="SourceProgram()">SourceProgram</button>
+
+<!-- Source code for the program itself -->
+
+<div id="SourceProgram" hidden>
+<xmp>
+															Program
+									
+#Imports
+import PySimpleGUI as sg
+import urllib
+import re
+import mechanize
+import PySimpleGUI as sg
+from datetime import datetime
+import mysql.connector as mysql
+import mysql.connector
+import os
+import shutil
+import ftplib
+from ftplib import FTP_TLS
+
+#Window Theme.
+
+sg.theme('DarkBlue1')
+
+#the visual for the ui and setting some keys for each screen to be used later.
+LoginLayout = [
+            [sg.Text('Username')],
+            [sg.Input(key='username')],
+            [sg.Text('Password')],
+            [sg.Input(key='password',password_char='*')],
+            [sg.Button('Submit'), sg.Button('Quit'),sg.Button('Register')],
+         ]
+
+RegisterLayout = [ 
+            [sg.Text('Username')],
+            [sg.Input(key='username')],
+            [sg.Text('email')],
+            [sg.Input(key='email')],
+            [sg.Text('password')],
+            [sg.Input(key='password',password_char='*')],
+            [sg.Text('confirm password')],
+            [sg.Input(key='confirmpassword',password_char='*')],
+            [sg.Button('Submit'), sg.Button('Quit')],
+         ]
+MainLayout = [ 
+            [sg.Text('Choose a game from the list to start'),sg.Combo(['Blade & Sorcery','Company of heroes relaunch','Dead space 3','Fallout 3','Fallout 4','Fallout VR','Oblivion','Pathfinder Kingmaker','Rocket League','Skyrim Special Edition','Skyrim VR','The Elder Scrolls V Skyrim','Tropico 6'],key='GameChoice')],
+            [sg.Text('Upload latest save for the game?'),sg.Checkbox('Save Upload Confirmation',key='GameSave',default=False)],
+            [sg.Text('Notes 1000 Chars or less'),sg.Text('                                                                    '),sg.Text('Goals For Current Sessions 500 chars or less')],
+            [sg.Multiline(size=(70, 40), key='Notes'),sg.Multiline(size=(70, 40),key='Goals')],
+            [sg.Button('Submit'), sg.Button('Quit')],
+         ]
+        
+# to create the window.
+
+LoginWindow = sg.Window('Login', LoginLayout,icon=r'C:\Users\Jacob\Desktop\Capstone\exe\Icon.ico')
+
+#the event loop required by the ui itself to operate its selection boxes.
+
+while True:
+    event, values = LoginWindow.read()
+    
+#If quit or force closed it will break the operation.
+    
+    if event in (None, 'Quit'):
+        LoginWindow.close()
+        break
+# If the Submit button it pressed
+
+    if event == 'Submit':
+        Username = (values['username'])
+        Password = (values['password'])
+        browser=mechanize.Browser()
+        browser.open("https://jbolencapstone.000webhostapp.com/login.php")
+        browser.select_form(nr=0)
+        browser.form['username']=(Username)
+        browser.form['password']=(Password)
+        browser.submit()
+        print (browser)
+        LoginCheck = str(browser)
+        if "profile"  in LoginCheck:
+            U=Username
+            print(U)
+            LoginWindow.hide()
+            MainWindow = sg.Window('Phoenix Save Revivification Tool', MainLayout,icon=r'C:\Users\Jacob\Desktop\Capstone\exe\Icon.ico',size=(1100,800))
+            event, values = MainWindow.read()
+            if event in (None, 'Quit'):
+                MainWindow.Close()
+                break
+            if event == 'Submit':
+                TimeSubmited = datetime.now()
+##                print(values['GameChoice']) #A bunch of test commands to make sure values are correctly present when requested
+##                print(values['Notes'])
+##                print(values['Goals'])
+##                print(values['GameSave'])
+##                print (TimeSubmited.strftime("%Y-%m-%d %H:%M:%S"))
+                HomePath = os.path.expanduser('~')
+##                print(HomePath)
+                SaveGameName = ("")
+                GameChoice = (values['GameChoice'])
+                Notes = (values['Notes'])
+                Goals = (values['Goals'])
+                GameSave = (values['GameSave'])
+                print(GameSave)
+                if (GameSave) == True:
+                    if (GameChoice) == 'Pathfinder Kingmaker':
+                        PathfinderPath = os.path.join(HomePath,'AppData/LocalLow/Owlcat Games/Pathfinder Kingmaker/Saved Games/')
+                        path = (PathfinderPath)
+                        
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(PathfinderPath+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                                
+                        print(path+latest)
+                    
+                                
+                    if (GameChoice) == 'Skyrim Special Edition':
+                        SkyrimSEPath = os.path.join(HomePath,'Documents/My Games/Skyrim Special Edition/Saves/')
+                        path = (SkyrimSEPath)
+                
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        
+                    if (GameChoice) == 'The Elder Scrolls V Skyrim':
+                        SkyrimPath = os.path.join(HomePath,'Documents/My Games/Skyrim/Saves/')
+                        path = (SkyrimPath)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                                
+                        print(path+latest)
+                        
+                    if (GameChoice) == 'Skyrim VR':
+                        SkyrimVRPath = os.path.join(HomePath,'Documents\My Games\Skyrim VR\Saves/')
+                        path = (SkyrimVRPath)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+
+                    if (GameChoice) == 'Blade & Sorcery':
+                        BASPath = os.path.join(HomePath,'Documents\My Games\Blade & Sorcery\Saves/')
+                        path = (BASPath)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                            
+
+                            
+                    if (GameChoice) == 'Fallout VR':
+                        FalloutVRPath = os.path.join(HomePath,'Documents\My Games\Fallout4VR\Saves/')
+                        path = (FalloutVRPath)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+
+
+                    if (GameChoice) == 'Fallout 4':
+                        Fallout4Path = os.path.join(HomePath,'Documents\My Games\Fallout4\Saves/')
+                        path = (Fallout4Path)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+
+                    if (GameChoice) == 'Company of heroes relaunch':
+                        COHPath = os.path.join(HomePath,'Documents\My Games\Company of Heroes Relaunch\Savegames/')
+                        path = (COHPath)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (key)
+                            uploadfile = open(path+key,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (latest)
+                            print(path+latest)
+                    if (GameChoice) == 'Dead space 3':
+                        DS3Path = os.path.join(HomePath,'Documents\EA Games\Dead Space 3/')
+                        path = (DS3Path)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (key)
+                            uploadfile = open(path+key,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+
+                    if (GameChoice) == 'Fallout 3':
+                        Fallout3Path = os.path.join(HomePath,'Documents\My Games\Fallout3\Saves/')
+                        path = (Fallout3Path)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (key)
+                            uploadfile = open(path+key,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+
+                    if (GameChoice) == 'Rocket League':
+                        RocketLeaguePath = os.path.join(HomePath,'Documents\My Games\Rocket League\TAGame\SaveData\DBE_Production/')
+                        path = (RocketLeaguePath)
+
+                        files =os.listdir(path)
+                        latest_file = files[0]
+                        for key in files:
+                            if os.path.getctime(path+key) > os.path.getctime(path + latest_file):
+                                latest = key
+                        ftp=FTP_TLS()
+                        ftp.set_debuglevel(2)
+                        ftp.connect('files.000webhost.com', 21)
+                        ftp.sendcmd('USER jbolencapstone')
+                        ftp.sendcmd('PASS jbolencapstone')
+                        FolderName = (Username)
+                        if FolderName in ftp.nlst('/public_html/Userfiles/'):
+                            print ('yes')
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (key)
+                            uploadfile = open(path+key,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+                        else:
+                            print ('no')
+                            ftp.cwd('/public_html/Userfiles/')
+                            ftp.mkd(FolderName)
+                            ftp.cwd('/public_html/Userfiles/'+Username)
+                            filename = (latest)
+                            uploadfile = open(path+latest,"rb")
+                            ftp.storbinary('STOR '+filename, uploadfile)
+                            ftp.close()
+                            SaveGameName = (key)
+                            print(path+key)
+
+							
+							
+                            
+            mydb = mysql.connector.connect(
+            host="freedb.tech",
+            user="freedbtech_jbolen",
+            password="jbolen",
+            database="freedbtech_Capstone"
+            )
+            mycursor = mydb.cursor()
+            SaveServerLocation = ("/Userfiles/"+Username+"/"+SaveGameName)
+            sql ="INSERT INTO ProgramData (UserName,Notes,Goals,Game,Date,SaveGameName,SaveServerLocation) VALUES (%s,%s,%s,%s,%s,%s,%s)"
+            val = (U,Notes,Goals,GameChoice,TimeSubmited,SaveGameName,SaveServerLocation)
+            mycursor.execute(sql, val)
+            mydb.commit()
+            sg.popup('Information Logged Have A Nice Day.')
+            MainWindow.close()
+
+            print(mycursor.rowcount, "record inserted.")
+            
+            
+            
+##        else:
+##            print('failure')
+    if event =='Register':
+        LoginWindow.close()
+        RegisterWindow = sg.Window('Registration', RegisterLayout,icon=r'C:\Users\Jacob\Desktop\Capstone\exe\Icon.ico')
+        event, values = RegisterWindow.read()
+        
+        if event in (None, 'Quit'):
+            RegisterWindow.close()
+            break
+        if event == 'Submit':
+            username = (values['username'])
+            email = (values['email'])
+            password = (values['password'])
+            confirmpassword = (values['confirmpassword'])
+            browser=mechanize.Browser()
+            browser.open("https://jbolencapstone.000webhostapp.com/register.php")
+            browser.select_form(nr=0)
+            browser.form['username']=(username)
+            browser.form['email']=(email)    
+            browser.form['password_1']=(password)  
+            browser.form['password_2']=(confirmpassword)
+            browser.submit()
+            print (browser)
+            U = (username)
+            LoginCheck = str(browser)
+            if "profile"  in LoginCheck:
+                sg.popup('Please restart to log in')
+                RegisterWindow.close()
+                if event in (None, 'Quit'):
+                    RegisterWindow.close()
+                    break
+                    
+            
+        
+</xmp>
+
+
+</div>
+
+<div id="shadowBox">
+  <p class = "rainbow rainbow_text_animated">	
+  You can sign in <a  href="login.php">Here</a>		 Or sign up <a href="register.php">here</a>
+  </p>
+  </div>
+</html>

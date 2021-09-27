@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+  <!--Setting the stylesheet and title for the webpage and setting some script requirements-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>This is Where excess javascript will be for the final</title>
+  </head>
+  <body>
+  <!--Manually setting the background image for the webpage-->
+	<style>
+body {
+  background-image: url('Background.gif');
+}
+</style>
+
+<!--Setting the nav bar-->
+
+	<div class="header">
+		<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="SourceCode.html">Source Code</a>
+		<a href="download.html">Downloads</a>
+		<a href="contact_us.html">Contact Us</a>
+		<a class="active" href="Javascript.html">Extra Javascript</a>
+		<div class = "Login"><a href = "login.php">Login</a>
+				
+				
+				
+				
+		<div class = "Register"><a href = "register.php">Sign Up</a>
+		</div>
+		<!--Setting the switch for the dark mode in the upper right corner-->
+    <div class="switch">
+        Dark Mode: <span class="inner-switch">OFF</span>
+    </div>
+	</div>
+	</div>
+	<!--Generalized text for the page-->
+<h1>
+This is Where excess javascript will be for the final
+</h1>
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>Alert User Ineraction </h2>
+<script src="js/Alert.js"></script>
+<!--Setting a button and interaction for the javacsript-->
+<button class="btn" onclick="AlertIneraction()"> Click For Example </button>
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>Prompt User Ineraction </h2>
+<script src="js/Age.js"></script>
+<!--Title and source of the javascript file-->
+<button class="btn" onclick="PromptInteraction()"> Click For Example </button>
+
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>TrueFalseReturn Interaction </h2>
+<script src="js/Happy.js"></script>
+<!--Title and source of the javascript file-->
+<button class="btn" onclick="HappyInteraction()"> Click For Example </button>
+
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>Date Time Interaction</h2>
+<script src="js/DateTime.js"></script>
+<!--Title and source of the javascript file-->
+<button class="btn" ondblclick="DateTime()">Double Click To Show Current Time</button>
+<div id=display></div>
+
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>MouseOverInteraction</h2>
+<script src="js/MouseOver.js"></script>
+<!--Title and source of the javascript file-->
+<div onmouseover = "over()">
+	<h2 id="MouseOverText">Dont you dare put your cursor on me!</h2>
+</div>
+
+
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>Click hold/release color change interaction</h2>
+<script src="js/ColorText.js"></script>
+<!--Title and source of the javascript file-->
+<p onmousedown="myFunction(this,'blue')" onmouseup="myFunction(this,'red')">
+Hold Click over this text to change the color of this text to one color release to change it to another!
+</p>
+
+<!--Title and source of the javascript file-->
+<h2>error handling Try/catch </h2>
+<script src="js/TryCatch.js"></script>
+<!--Title and source of the javascript file-->
+<div id="Err">TryCatch Example</div>
+<button class="btn" onclick="TryCatchExample()"> Click For Example </button>
+
+<br></br>
+<!--Title and source of the javascript file-->
+<script src="js/TruthyFalsy.js"></script>
+<h2>Truthy/falsey statement </h2>
+<button class="btn" onclick="TruthyFalsy()"> Click For Example </button>
+
+<br></br>
+<!--Title and source of the javascript file-->
+<h2>Anonymous Function </h2>
+<!--Title and source of the javascript file-->
+<p id="anon"></p>
+<button class="btn" onclick="(function () {
+  document.getElementById('anon').innerHTML = 'Self Called Anonymous Function i am!';
+})();
+"> Click For Example </button>
+
+
+<br></br>
+<!--Title and source of the javascript file-->
+<script src="js/HideParagragh.js"></script>
+<h2>Jquery Hide Text</h2>
+<div id=Paragraph
+<p class = "rainbow rainbow_text_animated"> I am colorfull text that will be hidden with a button press!</p>
+</div>
+<!--Title and source of the javascript file-->
+<input class="btn" type="reset" value="Click to hide the text with jquery">
+
+<br></br>
+<!--Title and source of the javascript file-->
+<script src="js/HideButton.js"></script>
+<h2>Hide the ugly Button jquery</h2>
+<button id = "UglyButton" > Hover over me i am ugly make me fade away! </button>
+
+  </body>
+<br></br>
+
+		<div id="shadowBox">
+		<p class = "rainbow rainbow_text_animated">	
+		Have an account sign in <a  href="login.php">Here</a>		 Not yet a member? <a href="register.php">Sign up</a>
+		</p>
+		</div>
+		<!--Linking the source of the dark mode javascript-->
+		<script src="js/DarkMode.js"></script>
+</html>

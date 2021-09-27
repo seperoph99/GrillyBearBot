@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+  <!--Stylesheet and title of the webpage-->
+	<link rel="stylesheet" type="text/css" href="ContactStyles.css">
+    <title>This is the contact page</title>
+  </head>
+  <body>
+  
+  <!--Manually setting the background image for the webpage-->
+  
+	<style>
+body {
+  background-image: url('Background.gif');
+}
+</style>
+
+<!--Setting the nav bar-->
+
+	<div class="header">
+		<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="SourceCode.html">Source Code</a>
+		<a href="download.html">Downloads</a>
+		<a class="active" href="contact_us.html">Contact Us</a>
+		<a href="Javascript.html">Extra Javascript</a>
+		<div class = "Login"><a href = "login.php">Login</a>
+		<div class = "Register"><a href = "register.php">Sign Up</a>
+</div>
+	</div>
+	</div>
+	
+	<!--Setting up the prerequsits of the contact us form-->
+<div class="container">
+  <div style="text-align:center">
+  <!--Main Text for the form itself-->
+    <h2>Contact Us</h2>
+    <p>Any thoughts or concerns don't hesitate to drop us a hint.</p>
+  </div>
+  <!--Displaying all fo the form and linking the javascript into the email section of the form-->
+		<form name="ContactForm" action="#"> 
+        <label for="fname">First Name </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="email">Email Adress</label>
+		<input type='text' name='email'/>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+		  <option value="usa">USA</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your concern complaint or suggestion..." style="height:170px"></textarea>
+		<label class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.ContactForm.email)"/></label>
+    </div>
+  </div>
+</div>
+<!--Linking the emailvalidation javascript to the webpage's form-->
+	<script src="js/EmailValidation.js"></script>
+	
+  </body>
+  
+</div>
+
+</html>
